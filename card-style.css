@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color: #8a0909;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+}
+
+.card-content .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 16px;
+    background-color: #333;
+    border-radius: 4px;
+    margin: 16px;
+}
+
+.card div a:hover {
+    background-color: rgb(26, 87, 44);
+}
+
+.album-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.album {
+    width: 325px;
+    background-color: #8a0909;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.album img {
+    width: 100%;
+    height: 350px;
+}
+
+.album-content .btn2 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 16px;
+    background-color: #333;
+    border-radius: 4px;
+    margin: 16px;
+}
+
+.album div a:hover {
+    background-color: rgb(26, 87, 44);
+}
