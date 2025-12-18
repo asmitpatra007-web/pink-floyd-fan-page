@@ -39,6 +39,11 @@
     background-color: rgb(26, 87, 44);
 }
 
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.25);
+}
+
 .album-container {
     display: flex;
     justify-content: center;
@@ -71,4 +76,10 @@
 
 .album div a:hover {
     background-color: rgb(26, 87, 44);
+
+}
+
+.album:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.25);
 }
