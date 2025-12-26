@@ -16,13 +16,13 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
+        /* body {
             background-image: url(Animals-floyd.jpeg);
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             background-size: cover;
-        }
+        } */
 
         .intro {
             text-align: center;
@@ -102,6 +102,14 @@
             <li><a href="induction-albums.html">Albums</a></li>
             <li><a href="induction-tours.html">Tours</a></li>
             <li><a href="">Gallery</a></li>
+            <li>
+                <div class="toggle-btn">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle-label">
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
+            </li>
         </ul>
     </nav>
     <p class="intro">
@@ -243,11 +251,32 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkbox = document.getElementById("checkbox");
+
+            // Default background
+            document.body.style.background =
+                "url('Animals-floyd.jpeg') center / cover no-repeat fixed";
+
+            checkbox.addEventListener("change", function () {
+                if (this.checked) {
+                    document.body.style.background =
+                        "url('dark_theme.png') center / cover no-repeat fixed";
+                } else {
+                    document.body.style.background =
+                        "url('Animals-floyd.jpeg') center / cover no-repeat fixed";
+                }
+            });
+        });
+    </script>
+
 
 
 </body>
 
 </html>
+
 
 
 
